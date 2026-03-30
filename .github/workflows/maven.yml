@@ -27,7 +27,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn clean test -DsuiteXmlFile=testng.xm; -Denv=qa
+    - name: Execute test Automation Framework
+      run: mvn clean test -DsuiteXmlFile=testng.xml -Denv=qa
       
     
