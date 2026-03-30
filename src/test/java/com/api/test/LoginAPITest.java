@@ -27,7 +27,6 @@ public class LoginAPITest {
 		.log().uri()
 		.log().headers()
 		.log().method()
-	
 		.when()
 		.post("login")
 		.then()
