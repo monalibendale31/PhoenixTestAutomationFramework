@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Phoenix API Test Suite" verbose="1">
+  <test name ="InWarrenty Flow Test" thread-count="5">
+    <classes>
+     
+      <class name="com.api.test.LoginAPITest"/>
+      <class name="com.api.test.UserDetailsAPITest"/>
+     <class name="com.api.test.CountAPITest"/>
+        <class name="com.api.test.MasterAPIRequest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
