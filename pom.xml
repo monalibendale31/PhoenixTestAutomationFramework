@@ -2,32 +2,33 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>PhoenixTestAutomationFramework</groupId>
-	<artifactId>PhoenixTestAutomationFramework</artifactId>
+	<groupId>RestAssuredTutorial</groupId>
+	<artifactId>RestAssuredTutorial</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PhoenixTestAutomationFramework</name>
+	<name>RestAssuredTutorial</name>
+	
 	<properties>
-		<maven.compiler.source> 17</maven.compiler.source>
-		<maven.compiler.target> 17</maven.compiler.target>
+
+		<maven.compiler.source> 16 </maven.compiler.source>
+		<maven.compiler.target> 16 </maven.compiler.target>
 	</properties>
-
+	
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.5.5</version>
-				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
-			</plugin>
+	<plugins>
 
-		</plugins>
-		> </build>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
 
-
+</plugins>
+	</build>
 	<dependencies>
 		<!-- Source:
 		https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
@@ -35,8 +36,8 @@
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>5.5.7</version>
-			<scope>test</scope>
 		</dependency>
+		<!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -75,14 +76,5 @@
 			<version>5.5.7</version>
 			<scope>compile</scope>
 		</dependency>
-		<!-- Source:
-		https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-surefire-plugin</artifactId>
-			<version>3.5.5</version>
-			<scope>compile</scope>
-		</dependency>
 	</dependencies>
-
 </project>
